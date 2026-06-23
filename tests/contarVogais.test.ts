@@ -36,5 +36,8 @@ test("Deve lidar com vogais acentuadas", () => {
   assert.deepStrictEqual(contarVogais("avó"), 2);
   assert.deepStrictEqual(contarVogais("técnico"), 3);
   assert.deepStrictEqual(contarVogais("público"), 3);
-  assert.deepStrictEqual(contarVogais("áéíóúâêîôûàèìòùãõ"), 17);
+  assert.deepStrictEqual(
+    contarVogais("áéíóúâêîôûàèìòùãõÁÉÍÓÚÂÊÎÔÛÀÈÌÒÙÃÕ"),
+    34,
+  );
 });
