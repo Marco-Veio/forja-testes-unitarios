@@ -14,6 +14,11 @@ Execute todos os testes:
 npm run test
 ```
 
+Para executar um por vez:
+```bash
+npm run test -- tests/nome.test.ts
+```
+
 ---
 
 # 📁 Estrutura do projeto
