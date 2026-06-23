@@ -28,9 +28,6 @@ export function gerarLimiteInteiro(
   return faker.number.int({ min, max });
 }
 
-export function gerarString(
-  min: number = 0,
-  max: number = Number.MAX_SAFE_INTEGER,
-) {
+export function gerarString(min: number = 0, max: number = 10000) {
   return faker.string.alphanumeric({ length: { min, max } });
 }
