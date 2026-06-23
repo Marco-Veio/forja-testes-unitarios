@@ -17,11 +17,8 @@ export function gerarNegativo() {
   return -faker.number.int();
 }
 
-export function gerarLimite(
-  min: number = 0,
-  max: number = Number.MAX_SAFE_INTEGER,
-) {
-  return faker.number.float({ min, max });
+export function gerarLimite(min: number = 0, max: number = 100) {
+  return faker.number.float({ min, max }) + 0.01;
 }
 
 export function gerarLimiteInteiro(
