@@ -14,7 +14,7 @@ export function gerarImpar() {
 }
 
 export function gerarNegativo() {
-  return faker.number.int({ multipleOf: -1 });
+  return -faker.number.int();
 }
 
 export function gerarLimite(
